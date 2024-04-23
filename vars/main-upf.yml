@@ -13,7 +13,7 @@ k8s:
 
 core:
   standalone: "false"
-  data_iface: ens18
+  data_iface: eno1
   values_file: "deps/5gc/roles/core/templates/sdcore-5g-values.yaml"
   ran_subnet: "172.20.0.0/16"	# set to empty string to get subnet from 'data_iface'
   helm:
@@ -38,7 +38,7 @@ core:
       #     core:   "192.168.250.7/24"
       #   ue_ip_pool: "172.247.0.0/16"
   amf:
-    ip: "10.76.28.113"
+    ip: "128.110.217.112"
 
 
 gnbsim:
@@ -52,7 +52,7 @@ gnbsim:
         name: gnbnet
 
   router:
-    data_iface: ens18
+    data_iface: eno1
     macvlan:
       iface: gnbaccess
       subnet_prefix: "172.20"

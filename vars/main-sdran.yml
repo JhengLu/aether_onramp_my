@@ -13,7 +13,7 @@ k8s:
 
 core:
   standalone: "true"
-  data_iface: ens18
+  data_iface: eno1
   values_file: "deps/5gc/roles/core/templates/sdcore-5g-values.yaml"
   ran_subnet: "172.20.0.0/16"
   helm:
@@ -27,7 +27,7 @@ core:
       chart_ref: aether/bess-upf
     values_file: "deps/5gc/roles/upf/templates/upf-5g-values.yaml"
   amf:
-    ip: "10.76.28.113"
+    ip: "128.110.217.112"
 
 sdran:
   platform:
